@@ -21,8 +21,7 @@ jobs:
     - uses: azure/login@v3
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        environment: 'AzureStack'
-        enable-AzPSSession: true
+        
 
       
     - name: Run Playwright tests
