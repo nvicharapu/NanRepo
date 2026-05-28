@@ -2,9 +2,13 @@ import { defineConfig } from '@playwright/test';
 import { createAzurePlaywrightConfig, ServiceOS } from '@azure/playwright';
 import { DefaultAzureCredential } from '@azure/identity';
 import config from './playwright.config';
+import { getServiceConfig } from '@azure/playwright-testing';
 
 /* Learn more about service configuration at https://aka.ms/pww/docs/config */
 export default defineConfig(
+  {
+    ...getServiceConfig(),
+  },
   config,
   createAzurePlaywrightConfig(config, {
     exposeNetwork: '<loopback>',
