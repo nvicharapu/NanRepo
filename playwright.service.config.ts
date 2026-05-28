@@ -6,7 +6,7 @@ const baseConfig: PlaywrightTestConfig = {
   testDir: './tests',
   reporter: [
     ['html', { open: 'never' }],
-  //  ['@azure/playwright/reporter'],
+    ['@azure/playwright/reporter'],
   ],
 };
 
