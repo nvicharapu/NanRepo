@@ -1,1 +1,1 @@
-[{"uid":"6197082bb2d341ed","name":"User can login with valid credentials","time":{"start":1779824659512,"stop":1779824665156,"duration":5644},"status":"passed","severity":"normal"}]
+[{"uid":"a40b9a37f17bc4ff","name":"User can login with valid credentials","time":{"start":1779993841033,"stop":1779993847669,"duration":6636},"status":"passed","severity":"normal"},{"uid":"8019cf60424cb677","name":"@Web Popup validations","time":{"start":1779994051928,"stop":1779994058871,"duration":6943},"status":"passed","severity":"normal"}]
