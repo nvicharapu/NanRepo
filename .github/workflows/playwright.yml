@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Playwright tests
         env:
-          PLAYWRIGHT_SERVICE_URL: https://eastasia.api.playwright.microsoft.com
+          PLAYWRIGHT_SERVICE_URL: wss://eastasia.api.playwright.microsoft.com/
           AZURE_CLIENT_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).clientId }}
           AZURE_TENANT_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}
           AZURE_CLIENT_SECRET: ${{ fromJson(secrets.AZURE_CREDENTIALS).clientSecret }}
