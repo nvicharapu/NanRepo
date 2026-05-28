@@ -6,10 +6,16 @@ export default defineConfig(
   createAzurePlaywrightConfig(
     {
       testDir: './tests',
+
+      // ✅ add reporter here ONLY
       reporter: [
         ['html', { open: 'never' }],
         ['@azure/playwright/reporter'],
       ],
+
+      // ✅ NO browser config
+      // ✅ NO projects
+      // ✅ NO use: { browserName: ... }
     },
     {
       os: ServiceOS.LINUX,
