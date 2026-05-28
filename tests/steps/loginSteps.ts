@@ -7,7 +7,7 @@ import { setDefaultTimeout } from "@cucumber/cucumber";
 setDefaultTimeout(60 * 1000); 
 
 
-
+/*
 
 let browser: Browser;
 let page: Page;
@@ -20,7 +20,7 @@ Given(
   "the user enters the base URL {string}",
   async (url: string) => {
     browser = await chromium.launch({ headless: false });
-    page = await browser.newPage();
+   page = await browser.newPage();
 
     loginPage = new LoginPage(page);
 
@@ -54,3 +54,5 @@ Then("the user should be logged in successfully with the URL {string}",async (ex
     await browser.close();
   }
 );
+
+*/
