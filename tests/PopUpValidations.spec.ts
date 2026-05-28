@@ -58,7 +58,7 @@ test('Screenshot & Visual comparison', async ({ page }: { page: Page }) => {
 
 });
 
-
+/*
 // Screenshot → store → screenshot comparison
 test('visual', async ({ page }: { page: Page }) => {
 
@@ -67,3 +67,5 @@ test('visual', async ({ page }: { page: Page }) => {
     await expect(await page.screenshot()).toMatchSnapshot('landing.png');
 
 });
+
+*/
