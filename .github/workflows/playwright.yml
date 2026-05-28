@@ -28,10 +28,7 @@ jobs:
 
       - name: Run Playwright tests
         env:
-          PLAYWRIGHT_SERVICE_URL: wss://eastasia.api.playwright.microsoft.com/
-          AZURE_CLIENT_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).clientId }}
-          AZURE_TENANT_ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).tenantId }}
-          AZURE_CLIENT_SECRET: ${{ fromJson(secrets.AZURE_CREDENTIALS).clientSecret }}
+          PLAYWRIGHT_SERVICE_URL: wss://eastasia.api.playwright.microsoft.com/playwrightworkspaces/044a5782-fd52-4db4-9923-984f819434cc/browsers
         run: npx playwright test --config=playwright.service.config.ts --workers=1
 
       - uses: actions/upload-artifact@v4
